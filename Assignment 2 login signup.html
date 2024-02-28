@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./login-sign-up.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="login-sign-up">
+      <img
+        class="swiggy-2-icon"
+        loading="lazy"
+        alt=""
+        src="./public/swiggy-2@2x.png"
+        id="swiggy2Image"
+      />
+
+      <section class="login-group">
+        <button class="input-field-parent" id="groupButton">
+          <div class="input-field"></div>
+          <b class="login">Login</b>
+        </button>
+        <button class="rectangle-parent" id="groupButton1">
+          <div class="frame-child"></div>
+          <b class="sign-up">Sign up</b>
+        </button>
+      </section>
+    </div>
+
+    <script>
+      var swiggy2Image = document.getElementById("swiggy2Image");
+      if (swiggy2Image) {
+        swiggy2Image.addEventListener("click", function (e) {
+          window.location.href = "./splash-logo.html";
+        });
+      }
+      
+      var groupButton = document.getElementById("groupButton");
+      if (groupButton) {
+        groupButton.addEventListener("click", function (e) {
+          window.location.href = "./login.html";
+        });
+      }
+      
+      var groupButton1 = document.getElementById("groupButton1");
+      if (groupButton1) {
+        groupButton1.addEventListener("click", function (e) {
+          window.location.href = "./sign-up.html";
+        });
+      }
+      </script>
+  </body>
+</html>
